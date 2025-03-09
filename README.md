@@ -33,7 +33,7 @@ A Django-based application to manage bank loans, allowing loan providers, custom
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/HushmKun/bank-loan-system.git
+   git clone https://github.com/HushmKun/Bank-Loan_assessment.git
    cd bank-loan-system
    ```
 2. Create a virtual environment:
@@ -107,8 +107,8 @@ python manage.py test
 - Bank Personnel manually Sets interest rate & approve/reject applications. Approved loans deduct from available funds.
 
 **5. Payments**
-- Payments reduce the outstanding loan balance. Assumed to be **simple interest**:  
-  `Interest = Principal × Rate × Term`.  
+- Payments reduce the outstanding loan balance. Assumed to be:  
+  `Interest = Principal × Rate`.  
   Payments are tracked but not automatically scheduled.
 
 **6. Application Statuses**
