@@ -1,0 +1,16 @@
+meta {
+  name: Create_Application
+  type: http
+  seq: 5
+}
+
+post {
+  url: 127.0.0.1:8000/api/v1/deposits/
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  amount: 5000
+  duration_months: 12
+}

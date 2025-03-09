@@ -1,0 +1,23 @@
+meta {
+  name: Login
+  type: http
+  seq: 2
+}
+
+post {
+  url: 127.0.0.1:8000/api/v1/login/
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  password: @dmin123
+  username: admin
+  ~username: Customer
+  ~username: Provider
+}
+
+script:post-response {
+  bru.setEnvVar('access',res.body.access);
+  bru.setEnvVar('refresh',res.body.refresh);
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Modify_Application
+  type: http
+  seq: 7
+}
+
+put {
+  url: 127.0.0.1:8000/api/v1/deposits/:id/
+  body: multipartForm
+  auth: inherit
+}
+
+params:path {
+  id: 5
+}
+
+body:multipart-form {
+  status: accepted
+}
